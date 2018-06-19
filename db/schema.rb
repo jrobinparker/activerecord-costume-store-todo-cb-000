@@ -10,16 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 5) do
+=======
+ActiveRecord::Schema.define(version: 4) do
+>>>>>>> 753af4926f3cffed3a25c37acc1b5e4cfb207f59
 
   create_table "costume_stores", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.string "costume_inventory"
+<<<<<<< HEAD
     t.datetime "opening_time"
     t.datetime "closing_time"
     t.integer "num_of_employees"
     t.boolean "still_in_business"
+=======
+    t.integer "employee_count"
+    t.boolean "in_business"
+    t.datetime "opening_time"
+    t.datetime "closing_time"
+>>>>>>> 753af4926f3cffed3a25c37acc1b5e4cfb207f59
   end
 
   create_table "costumes", force: :cascade do |t|
@@ -27,6 +38,11 @@ ActiveRecord::Schema.define(version: 5) do
     t.integer "price"
     t.string "image_url"
     t.string "size"
+<<<<<<< HEAD
+=======
+    t.datetime "created"
+    t.datetime "updated"
+>>>>>>> 753af4926f3cffed3a25c37acc1b5e4cfb207f59
     t.datetime "created_at"
     t.datetime "updated_at"
   end
